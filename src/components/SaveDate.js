@@ -10,8 +10,8 @@ const BackgroundVideo = () => {
     <div>
       <div className='vedio-area'>
         <div>
-          <video className='short-video' autoPlay='autoplay' loop='loop' muted>
-            <source src={videoSource} type='mp4' />
+          <video className='short-video' autoPlay loop muted>
+            <source src={videoSource} type='video/mp4' />
           </video>
 
           <div className='slide-b'>
