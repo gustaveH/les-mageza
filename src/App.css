@@ -191,7 +191,7 @@ h2 {
 }
 
 /* Save Date from  */
-.container {
+/* .container {
   position: relative;
 }
 .save-form {
@@ -231,9 +231,10 @@ h2 {
 }
 .check-box {
   padding: 10px;
+
   margin-bottom: 0.5em;
   color: var(--mainWhite);
 }
 .close-button {
   background: chocolate;
-}
+} */

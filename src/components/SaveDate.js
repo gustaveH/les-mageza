@@ -32,9 +32,7 @@ const BackgroundVideo = () => {
           </div>
         </div>
       </div>
-      <div>
-        <SaveDateForm />
-      </div>
+      <div>{/* <SaveDateForm /> */}</div>
     </div>
   );
 };
