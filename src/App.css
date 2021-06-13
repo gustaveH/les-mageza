@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Muli:300,400,500,600,700&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primaryColor: #910322;
+  --secondaryColor: #064d5e;
+  --thirdColor: #d26d00;
+  --mainWhite: #ffffff;
+  --mainBlack: #000000;
+}
+body {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+.short-video {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+.slide-content {
+  text-align: center;
+  background: rgba(243, 109, 0, 0.11);
+  max-width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+.slide-b {
+  position: relative;
+  margin-top: 17%;
+}
+.animated-circle {
+  width: 103%;
+  height: 103%;
+  background: rgba(145, 3, 34, 0.568);
+  opacity: 0.8;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.5%;
+  top: -1.5%;
+  -webkit-animation: pulse 1s infinite;
+  animation: pulse 1s infinite;
+  z-index: -1;
+}
+.slide-content h2 {
+  font-size: 60px;
+  color: var(--secondaryColor);
+}
+.slide-title h2 {
+  color: var(--mainWhite);
+}
+.slide-subtitle h4 {
+  font-size: 18px;
+  color: var(--mainWhite);
+  margin-top: 8em;
+}
+.slide-text p {
+  color: var(--mainWhite);
+  margin-bottom: 6.5em;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .slide-content h2 {
+    font-size: 35px;
+  }
+  .slide-b {
+    position: relative;
+    margin-top: 35%;
+  }
+  .slide-content {
+    width: 280px;
+    height: 280px;
+  }
+  .item1,
+  .item2 {
+    height: 580px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #959595;
+  z-index: 10;
+  transition: all 0.3s;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.slick-slider:hover .slick-prev,
+.slick-slider:hover .slick-next {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-prev:before {
+  font-family: 'FontAwesome';
+  content: '\f104';
+  opacity: 1;
+  color: #fff;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-next:before {
+  font-family: 'FontAwesome';
+  content: '\f105';
+  opacity: 1;
+  color: #fff;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: #85aaba;
+  border: none;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* Save Date from  */
+.container {
+  position: relative;
+}
+.save-form {
+  height: 50px;
+  position: relative;
+  left: 30%;
+}
+@media (max-width: 767px) {
+  .save-form {
+    height: 50px;
+    position: relative;
+    left: 20%;
+  }
+}
+.will-you-make-it {
+  color: var(--mainWhite);
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.will-you-make-it-button:hover {
+  color: var(--primaryColor);
+}
+.form-modal {
+  background: rgb(255, 255, 255, 0.8);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5%;
+  padding: 4%;
+  z-index: 1000;
+}
+.close-form {
+  position: relative;
+  left: 100%;
+  margin-bottom: 10%;
+}
+.check-box {
+  padding: 10px;
+  margin-bottom: 0.5em;
+  color: var(--mainWhite);
+}
+.close-button {
+  background: chocolate;
+}
