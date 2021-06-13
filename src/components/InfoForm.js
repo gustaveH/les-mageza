@@ -28,7 +28,7 @@ const InfoForm = ({ open, onClose }) => {
           <Form.Control placeholder='1234 Main St' />
         </Form.Group>
         <Button
-          variant='primary'
+          variant='secondary'
           type='submit'
           onClick={onClose}
           className='close-button'

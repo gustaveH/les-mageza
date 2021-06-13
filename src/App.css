@@ -191,29 +191,26 @@ h2 {
 }
 
 /* Save Date from  */
-/* .container {
+.container {
   position: relative;
 }
+
 .save-form {
   height: 50px;
-  position: relative;
+  position: absolute;
   left: 30%;
 }
-@media (max-width: 767px) {
-  .save-form {
-    height: 50px;
-    position: relative;
-    left: 20%;
-  }
-}
+
 .will-you-make-it {
   color: var(--mainWhite);
   font-weight: bold;
   margin-top: 0.5em;
 }
+
 .will-you-make-it-button:hover {
   color: var(--primaryColor);
 }
+
 .form-modal {
   background: rgb(255, 255, 255, 0.8);
   position: fixed;
@@ -224,17 +221,17 @@ h2 {
   padding: 4%;
   z-index: 1000;
 }
+
 .close-form {
   position: relative;
   left: 100%;
   margin-bottom: 10%;
 }
+
 .check-box {
-  padding: 10px;
+  margin-top: 10px;
+  padding: 5px;
 
   margin-bottom: 0.5em;
   color: var(--mainWhite);
 }
-.close-button {
-  background: chocolate;
-} */
