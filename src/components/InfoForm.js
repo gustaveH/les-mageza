@@ -4,6 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 
 const InfoForm = ({ open, onClose }) => {
   if (!open) return null;
+
   return (
     <div className='form-modal'>
       <FaTimes onClick={onClose} className='close-form' />
