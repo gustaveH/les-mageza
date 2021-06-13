@@ -5,12 +5,12 @@ import SaveDateForm from './SaveDateForm';
 
 const BackgroundVideo = () => {
   const videoSource =
-    'https://static.videezy.com/system/resources/previews/000/038/390/original/17_050_01.mp4';
+    'https://les-pageza-media.s3.amazonaws.com/TheProposalShort.mp4';
   return (
     <div>
       <div className='vedio-area'>
         <div>
-          <video className='short-video' autoPlay loop muted>
+          <video className='short-video' autoPlay='autoplay' loop='loop'>
             <source src={videoSource} type='video/mp4' />
           </video>
 
