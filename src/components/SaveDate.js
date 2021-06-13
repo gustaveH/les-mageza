@@ -10,7 +10,13 @@ const BackgroundVideo = () => {
     <div>
       <div className='vedio-area'>
         <div>
-          <video className='short-video' autoPlay loop muted>
+          <video
+            className='short-video'
+            autoPlay='autoplay'
+            loop='loop'
+            muted
+            className={classes.Video}
+          >
             <source src={videoSource} type='video/mp4' />
           </video>
 
@@ -32,7 +38,9 @@ const BackgroundVideo = () => {
           </div>
         </div>
       </div>
-      <div>{/* <SaveDateForm /> */}</div>
+      <div>
+        <SaveDateForm />
+      </div>
     </div>
   );
 };
