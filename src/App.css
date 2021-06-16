@@ -200,15 +200,30 @@ h2 {
   position: absolute;
   left: 30%;
 }
-
-.will-you-make-it {
-  color: var(--mainWhite);
-  font-weight: bold;
-  margin-top: 0.5em;
+.make-it {
+  color: var(--mainBlack) !important;
+  background: var(--mainWhite) !important;
+  border: none !important;
+  position: relative;
+  top: 50%;
+  left: 100%;
+}
+.make-it:hover {
+  background-color: var(--primaryColor) !important;
 }
 
-.will-you-make-it-button:hover {
-  color: var(--primaryColor);
+@media (max-width: 767px) {
+  .make-it {
+    color: var(--mainBlack) !important;
+    background: var(--mainWhite) !important;
+    border: none !important;
+    position: relative;
+    top: 50%;
+    left: 20%;
+  }
+  .make-it:hover {
+    background: var(--primaryColor) !important;
+  }
 }
 
 .form-modal {

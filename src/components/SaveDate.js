@@ -23,7 +23,7 @@ const BackgroundVideo = () => {
                 <h2>Save The Date</h2>
               </div>
               <div className='slide-text'>
-                <p>13 November 2020</p>
+                <p>13 November 2021</p>
               </div>
               <Animated>
                 <div className='animated-circle'></div>

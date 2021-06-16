@@ -28,6 +28,10 @@ const InfoForm = ({ open, onClose }) => {
           <Form.Label>Full Adress</Form.Label>
           <Form.Control placeholder='1234 Main St' />
         </Form.Group>
+        <Form.Group controlId='formGridAddress1'>
+          <Form.Label>Attending?</Form.Label>
+          <Form.Control placeholder='Yes, No, Maybe' />
+        </Form.Group>
         <Button
           variant='secondary'
           type='submit'
