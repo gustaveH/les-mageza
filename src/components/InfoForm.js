@@ -1,47 +1,57 @@
-import React from 'react';
-import { Form, Button, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+
+import { db } from './firebase';
 import { FaTimes } from 'react-icons/fa';
 
 const InfoForm = ({ open, onClose }) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [add, setAdd] = useState('');
+  const [attend, setAttend] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    db.collection('contacts')
+      .add({
+        name: name,
+        email: email,
+        add: add,
+        attend: attend,
+      })
+      .then(() => {
+        alert('Thank you! Be on the lookout for the Envitation!');
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+    setName('');
+    setEmail('');
+    setAdd('');
+    setAttend('');
+  };
+
   if (!open) return null;
 
   return (
-    <div className='form-modal'>
-      <FaTimes onClick={onClose} className='close-form' />
-      <Form>
-        <Form.Row>
-          <Col>
-            <Form.Control placeholder='First name' />
-          </Col>
-          <Col>
-            <Form.Control placeholder='Last name' />
-          </Col>
-        </Form.Row>
-        <Form.Row>
-          <Form.Group as={Col} controlId='formGridEmail'>
-            <Form.Label>Email</Form.Label>
-            <Form.Control type='email' placeholder='Enter email' />
-          </Form.Group>
-        </Form.Row>
+    <div className='container'>
+      <form className='form'>
+        <FaTimes onClick={onClose} className='close-form' />
 
-        <Form.Group controlId='formGridAddress1'>
-          <Form.Label>Full Adress</Form.Label>
-          <Form.Control placeholder='1234 Main St' />
-        </Form.Group>
-        <Form.Group controlId='formGridAddress1'>
-          <Form.Label>Attending?</Form.Label>
-          <Form.Control placeholder='Yes, No, Maybe' />
-        </Form.Group>
-        <Button
-          variant='secondary'
-          type='submit'
-          onClick={onClose}
-          className='close-button'
-        >
+        <input type='text' name='name' placeholder='Full Name' />
+
+        <input type='text' name='Email' placeholder='Email' />
+
+        <input type='text' name='Full Adress' placeholder='Full Adress' />
+
+        <label className='attend'>
+          Atending:
+          <input type='text' name='name' placeholder='Yes, No, Maybe' />
+        </label>
+        <button type='submit' value='Submit'>
           Submit
-        </Button>
-      </Form>
-      <p>Be on the lookout for the initation</p>
+        </button>
+      </form>
     </div>
   );
 };

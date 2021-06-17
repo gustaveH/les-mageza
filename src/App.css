@@ -225,28 +225,48 @@ h2 {
     background: var(--primaryColor) !important;
   }
 }
-
-.form-modal {
-  background: rgb(255, 255, 255, 0.8);
+.form {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: var(--primaryColor);
+  padding: 5%;
   border-radius: 5%;
-  padding: 4%;
-  z-index: 1000;
+  z-index: 800;
 }
-
+.form input {
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 1px solid var(--mainWhite);
+  background: var(--mainWhite);
+  font-size: 15px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+.form button {
+  padding: 20px;
+  border: none;
+  background-color: var(--secondaryColor);
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+}
+.attend {
+  color: var(--mainWhite);
+}
 .close-form {
   position: relative;
-  left: 100%;
-  margin-bottom: 10%;
-}
-
-.check-box {
-  margin-top: 10px;
-  padding: 5px;
-
-  margin-bottom: 0.5em;
-  color: var(--mainWhite);
+  margin: 5%;
+  left: 80%;
+  top: 50%;
+  cursor: pointer;
+  font-size: 20px;
 }
