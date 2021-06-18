@@ -20,7 +20,7 @@ const InfoForm = ({ open, onClose }) => {
         attend: attend,
       })
       .then(() => {
-        alert('Thank you! Be on the lookout for the Envitation!');
+        alert('Thank you! Be on the lookout for the Envitation.');
       })
       .catch((error) => {
         alert(error.message);
@@ -35,18 +35,42 @@ const InfoForm = ({ open, onClose }) => {
 
   return (
     <div className='container'>
-      <form className='form'>
+      <form className='form' onSubmit={handleSubmit}>
         <FaTimes onClick={onClose} className='close-form' />
 
-        <input type='text' name='name' placeholder='Full Name' />
+        <input
+          type='text'
+          name='name'
+          placeholder='Full Name'
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
 
-        <input type='text' name='Email' placeholder='Email' />
+        <input
+          type='text'
+          name='Email'
+          placeholder='Email'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-        <input type='text' name='Full Adress' placeholder='Full Adress' />
+        <input
+          type='text'
+          name='Full Adress'
+          placeholder='Full Adress'
+          value={add}
+          onChange={(e) => setAdd(e.target.value)}
+        />
 
         <label className='attend'>
           Atending:
-          <input type='text' name='name' placeholder='Yes, No, Maybe' />
+          <input
+            type='text'
+            name='name'
+            placeholder='Yes, No, Maybe'
+            value={attend}
+            onChange={(e) => setAttend(e.target.value)}
+          />
         </label>
         <button type='submit' value='Submit'>
           Submit
