@@ -10,11 +10,6 @@
     {
       "src": "card.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "card.png",
-      "type": "image/png",
       "sizes": "512x512"
     }
   ],
