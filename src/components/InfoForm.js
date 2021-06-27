@@ -20,7 +20,7 @@ const InfoForm = ({ open, onClose }) => {
         attend: attend,
       })
       .then(() => {
-        alert('Thank you! Be on the lookout for the Envitation.');
+        alert('Thank you! Be on the lookout for the invitation.');
       })
       .catch((error) => {
         alert(error.message);
@@ -63,7 +63,7 @@ const InfoForm = ({ open, onClose }) => {
         />
 
         <label className='attend'>
-          Atending:
+          Attending:
           <input
             type='text'
             name='name'
