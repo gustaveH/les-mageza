@@ -12,7 +12,7 @@ function App() {
         <meta name='twitter:title' content='Les Mageza' />
         <meta
           name='twitter:description'
-          content='Were Getting Married! Save the date!'
+          content='We,re Getting Married! Save the date!'
         />
         <meta name='twitter:image' content={Card} />
       </Helmet>
