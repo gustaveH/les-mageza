@@ -17,7 +17,7 @@ const BackgroundVideo = () => {
           <div className='slide-b'>
             <div className='slide-content'>
               <div className='slide-subtitle'>
-                <h4>WERE GETTING MARRIED</h4>
+                <h4>WE ARE GETTING MARRIED!</h4>
               </div>
               <div className='slide-title'>
                 <h2>Save The Date</h2>
