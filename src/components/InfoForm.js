@@ -56,7 +56,7 @@ const InfoForm = ({ open, onClose }) => {
 
         <input
           type='text'
-          name='Full Adress'
+          name='Full Address'
           placeholder='Full Adress'
           value={add}
           onChange={(e) => setAdd(e.target.value)}
