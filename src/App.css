@@ -205,7 +205,7 @@ h2 {
   background: var(--mainWhite) !important;
   border: none !important;
   position: relative;
-  top: 30%;
+  top: 20%;
   left: 95%;
 }
 .make-it:hover {
