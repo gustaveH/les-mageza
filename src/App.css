@@ -86,7 +86,7 @@ h2 {
   }
   .slide-b {
     position: relative;
-    margin-top: 35%;
+    margin-top: 40%;
   }
   .slide-content {
     width: 280px;
@@ -205,8 +205,8 @@ h2 {
   background: var(--mainWhite) !important;
   border: none !important;
   position: relative;
-  top: 50%;
-  left: 100%;
+  top: 30%;
+  left: 95%;
 }
 .make-it:hover {
   background-color: var(--primaryColor) !important;
