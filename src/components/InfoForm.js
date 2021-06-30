@@ -20,7 +20,7 @@ const InfoForm = ({ open, onClose }) => {
         attend: attend,
       })
       .then(() => {
-        alert('Thank you! Be on the lookout for the invitation.');
+        alert('Thank you for the response!');
       })
       .catch((error) => {
         alert(error.message);
